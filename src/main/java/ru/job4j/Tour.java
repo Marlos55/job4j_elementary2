@@ -1,17 +1,18 @@
 package ru.job4j;
 
 public class Tour {
-    public static void offer(boolean passport) {
-        System.out.println("A client has foreign passport : " + passport);
-        if (passport) {
-            System.out.println("Tours abroad.");
+    public static void access(int age) {
+        System.out.println("The age of the customer is : " + age);
+        if (age == 21) {
+            System.out.println("Welcome to the cinema..");
         } else {
-            System.out.println("Tours in Russia.");
+            System.out.println("It is not for you.");
         }
     }
 
     public static void main(String[] args) {
-        Tour.offer(true);
-        Tour.offer(false);
+        Tour.access(21);
+        Tour.access(16);
+
     }
 }
